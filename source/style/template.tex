@@ -1,0 +1,47 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage[margin=1.2in]{geometry} 
+\setlength\parindent{0in}
+
+% Reduce spacing in itemize, enumerate and titles
+\usepackage{multicol}
+\usepackage{enumitem}
+\setenumerate{nolistsep}
+\setitemize{nolistsep}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (quotes'' --- dashes etc.) to unicode
+\setromanfont[Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
+\setmonofont[Scale=0.8]{Monaco} 
+\setsansfont[Scale=0.9]{Optima Regular} 
+
+% HEADINGS and TITLES
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\sffamily\mdseries\large\underline} % Underlines headings
+\setcounter{secnumdepth}{-1} % Removes the numbers before sections
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+\usepackage{titling}
+\setlength{\droptitle}{-90pt} % The negative number moves the title closer to the top of the page
+\title{$title$} % name $if(title)$$title$$endif$
+\author{$if(website)$$website$\\\\$endif$
+$street$ \textbar{} $city$, $postcode$\\ %Put your address here
+$phone$ \textbar{} $email$ } % put your contact information here
+\date{} % Leave blank to remove the date
+
+% BEGIN DOCUMENT
+\begin{document}
+\maketitle
+\begin{raggedright}
+$body$
+\end{raggedright}
+\end{document}
