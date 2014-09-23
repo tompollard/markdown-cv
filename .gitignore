@@ -107,3 +107,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# Ignore OSX DS_Store files
+.DS_Store
