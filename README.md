@@ -1,4 +1,4 @@
-markdown-cv
+markdown-cv [![Build Status](https://travis-ci.org/tompollard/markdown-cv.svg?branch=master)](https://travis-ci.org/tompollard/markdown-cv)
 ===========
 
 Simple Markdown CV / Resume
