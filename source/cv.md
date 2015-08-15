@@ -9,22 +9,22 @@ email: your.email@address.com
 date: 22 November 2014
 ...
 
-## Personal summary
+### Personal summary
 
 > My research interests are ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-# Education 
+### Education 
 
 - M.A.     Subject (grade), University name and location
 - B.A.     Subject (grade), University name and location
 - A Level  Subject (grade), University name and location
 
-# Technical
+### Technical
 
 - Intermediate: HTML, Python, etc, etc
 - Basic: CSS, Stata, etc, etc
 
-# Employment 
+### Employment 
 
 - 2015: Job title, Company
 
@@ -44,7 +44,7 @@ date: 22 November 2014
 
 \newpage
 
-# Publications
+### Publications
 
 - YYYY: Name et al. Article title. Journal name. Link/DOI
 - YYYY: Name et al. Article title. Journal name. Link/DOI
@@ -54,7 +54,7 @@ date: 22 November 2014
 - YYYY: Name et al. Article title. Journal name. Link/DOI
 - YYYY: Name et al. Article title. Journal name. Link/DOI
 
-# Selected presentations
+### Selected presentations
 
 - YYYY: Title of presentation. Conference. Location. Poster/Oral
 - YYYY: Title of presentation. Conference. Location. Poster/Oral
@@ -64,7 +64,7 @@ date: 22 November 2014
 - YYYY: Title of presentation. Conference. Location. Poster/Oral
 - YYYY: Title of presentation. Conference. Location. Poster/Oral
 
-# Memberships and committees
+### Memberships and committees
 
 - YYYY: Name of committee/society etc.
 - YYYY: Name of committee/society etc.
@@ -73,7 +73,7 @@ date: 22 November 2014
 - YYYY: Name of committee/society etc.
 - YYYY: Name of committee/society etc.
 
-# Awards and supporting information
+### Awards and supporting information
 
 - YYYY: Description of award, certificate, supporting info etc.
 - YYYY: Description of award, certificate, supporting info etc.
@@ -83,7 +83,7 @@ date: 22 November 2014
 - YYYY: Description of award, certificate, supporting info etc.
 - YYYY: Description of award, certificate, supporting info etc.
 
-# References
+### References
 
 Available on request.
 
