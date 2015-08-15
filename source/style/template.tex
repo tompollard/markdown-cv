@@ -8,6 +8,10 @@
 \usepackage[margin=1.2in]{geometry} 
 \setlength\parindent{0in}
 
+% fix for pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 % Reduce spacing in itemize, enumerate and titles
 \usepackage{multicol}
 \usepackage{enumitem}
