@@ -24,24 +24,24 @@ help:
 
 pdf:
 	pandoc -s \
-	"$(INPUTDIR)/*.md" \
+	"$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.pdf" \
 	--template="$(STYLEDIR)/template.tex" \
 	--latex-engine=xelatex
 
 tex:
 	pandoc -s \
-	"$(INPUTDIR)/*.md" \
+	"$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.tex" \
 	--template="$(STYLEDIR)/template.tex" \
 	--latex-engine=xelatex
 
 docx:
-	pandoc "$(INPUTDIR)/*.md" \
+	pandoc "$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.docx" \
 
 html:
-	pandoc "$(INPUTDIR)/*.md" \
+	pandoc "$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.html"
 
 .PHONY: help pdf docx html tex
