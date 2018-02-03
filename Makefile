@@ -23,18 +23,18 @@ help:
 	@echo 'get templates from: https://github.com/jgm/pandoc-templates			  '
 
 pdf:
-	pandoc -s \
+	pandoc -s -f markdown-auto_identifiers \
 	"$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.pdf" \
 	--template="$(STYLEDIR)/template.tex" \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 tex:
 	pandoc -s \
 	"$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/cv.tex" \
 	--template="$(STYLEDIR)/template.tex" \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 docx:
 	pandoc "$(INPUTDIR)"/*.md \
