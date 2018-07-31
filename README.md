@@ -5,7 +5,7 @@ Simple Markdown CV / Resume
 
 ## Acknowledgments
 
-The original CV template is based on a version by [Craig Eley](http://craigeley.com), with a couple of minor modifications to make it run with Pandoc.
+The original CV template is based on a version by Craig Eley, with a couple of minor modifications to make it run with Pandoc.
 
 ## Requirements
 
