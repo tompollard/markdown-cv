@@ -19,8 +19,20 @@ Requires Latex (http://latex-project.org/ftp.html) and Pandoc (http://johnmacfar
 
 ### With Docker compose
 
+If you are not feeling like install pandoc and all tooles.
+
+Heres an docurized way to get the same result as with the make command.
+
 All thats needed to run to create an pdf is:
-> docker-compose run markdonwcv-pdf
+> docker-compose run mdcv-pdf
+
+and the rest:
+
+> docker-compose run mdcv-tex
+
+> docker-compose run mdcv-docx
+
+> docker-compose run mdcv-html
 
 ## Notes / to do
 

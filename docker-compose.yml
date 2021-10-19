@@ -1,13 +1,43 @@
 version: '3.4'
 
 services:
-  markdonwcv-pdf:
+  mdcv-pdf:
     image: markdowncv
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: source/cv.md -o output/cv.pdf --template source/style/template.tex --pdf-engine=xelatex  
+    command: -s -f markdown-auto_identifiers source/cv.md -o output/cv.pdf --template source/style/template.tex --pdf-engine=xelatex  
     volumes:
      - ./source:/data/source
      - ./output:/data/output
+
+  mdcv-tex:
+    image: markdowncv
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: -s source/cv.md -o output/cv.tex --template source/style/template.tex --pdf-engine=xelatex  
+    volumes:
+      - ./source:/data/source
+      - ./output:/data/output
+
+  mdcv-docx:
+    image: markdowncv
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: source/cv.md -o output/cv.docx
+    volumes:
+      - ./source:/data/source
+      - ./output:/data/output
+
+  mdcv-html:
+    image: markdowncv
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: source/cv.md -o output/cv.html
+    volumes:
+      - ./source:/data/source
+      - ./output:/data/output
     
