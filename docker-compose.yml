@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  markdonwcv-pdf:
+    image: markdowncv
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: source/cv.md -o output/cv.pdf --template source/style/template.tex --pdf-engine=xelatex  
+    volumes:
+     - ./source:/data/source
+     - ./output:/data/output
+    
