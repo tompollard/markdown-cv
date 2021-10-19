@@ -16,10 +16,10 @@ env:
 
 before_install:
   # Fetch pandoc and pandoc-citeproc binaries
-  - wget https://github.com/jgm/pandoc/releases/download/2.1.1/pandoc-2.1.1-1-amd64.deb && ar p pandoc-2.1.1-1-amd64.deb data.tar.xz | tar xJ
+  - wget https://github.com/jgm/pandoc/releases/download/2.14.2/pandoc-2.14.2-1-amd64.deb && ar p pandoc-2.14.2-1-amd64.deb data.tar.gz | tar xz
   # Install TeX Live
   - sudo apt-get update -qq
-  - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra  texlive-science
+  - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science texlive-generic-recommended
   # Install fonts
   - sudo apt-get install lmodern
 
