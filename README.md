@@ -17,6 +17,23 @@ Requires Latex (http://latex-project.org/ftp.html) and Pandoc (http://johnmacfar
 2. Run 'make pdf' in the folder containing the Makefile
 3. A new PDF will be generated in the /output folder
 
+### With Docker compose
+
+If you are not feeling like install pandoc and all tooles.
+
+Heres an docurized way to get the same result as with the make command.
+
+All thats needed to run to create an pdf is:
+> docker-compose up mdcv-pdf
+
+and the rest:
+
+> docker-compose up mdcv-tex
+
+> docker-compose up mdcv-docx
+
+> docker-compose up mdcv-html
+
 ## Notes / to do
 
 1. Create a list of useful commands
