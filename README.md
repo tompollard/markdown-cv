@@ -24,15 +24,15 @@ If you are not feeling like install pandoc and all tooles.
 Heres an docurized way to get the same result as with the make command.
 
 All thats needed to run to create an pdf is:
-> docker-compose run mdcv-pdf
+> docker-compose up mdcv-pdf
 
 and the rest:
 
-> docker-compose run mdcv-tex
+> docker-compose up mdcv-tex
 
-> docker-compose run mdcv-docx
+> docker-compose up mdcv-docx
 
-> docker-compose run mdcv-html
+> docker-compose up mdcv-html
 
 ## Notes / to do
 
